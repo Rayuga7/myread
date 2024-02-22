@@ -1,0 +1,52 @@
+.searchButton {
+    font-weight: bold;
+    margin-top: 60px;
+    align-items: center;
+    margin-left: 45%;
+    height: 45px;
+    width: 80px;
+    background-color: greenyellow;
+    border-radius: 5px;
+
+}
+
+.search-books-bar {
+    position: relative;
+}
+
+.suggestions-list {
+    position: absolute;
+    top: 100%;
+    /* Position suggestions below the search bar */
+    left: 0;
+    z-index: 1;
+    /* Ensure suggestions appear above other elements */
+    background-color: #fff;
+    /* Background color of suggestions */
+    border: 1px solid #ccc;
+    /* Border around suggestions */
+    border-radius: 4px;
+    /* Rounded corners for suggestions */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Shadow effect for suggestions */
+    padding: 0;
+    /* Remove default padding */
+    margin: 0;
+    /* Remove default margin */
+    list-style-type: none;
+    /* Remove bullets from suggestions */
+    width: 100%;
+    /* Make suggestions span the full width of the search bar */
+}
+
+.suggestions-list li {
+    padding: 8px 16px;
+    /* Add padding to suggestions */
+    cursor: pointer;
+    /* Show pointer cursor on hover */
+}
+
+.suggestions-list li:hover {
+    background-color: #f0f0f0;
+    /* Highlight suggestion on hover */
+}
